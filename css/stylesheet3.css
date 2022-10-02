@@ -1,0 +1,548 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+ :root {
+    --primary-color: rgb(10, 10, 64);
+    --font-family: sans-serif;
+    --secondary-color: rgb(196, 25, 173);
+    --thirdly-color: rgb(9, 187, 29);
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+.anibame {
+    width: 100%;
+    height: 60px;
+    background-color: var(--secondary-color);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    transition: all 3s 0s;
+    border-radius: 5px;
+}
+
+.anibame>h3 {
+    font-family: var(--font-family);
+    font-style: italic;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    color: rgba(0, 247, 247, 0.834);
+}
+
+.anibame:hover {
+    margin: 10px auto;
+    width: 25%;
+    border-radius: 100%;
+    transition: 3s 1s;
+    background-color: rgba(19, 204, 237, 0.801);
+    box-shadow: 5px 5px 10px 0 rgb(9, 187, 29), -5px -5px 10px 0 rgb(9, 187, 29);
+}
+
+.anibame:hover>h3 {
+    color: var(--primary-color);
+    font-size: 30px;
+    transition: 3s 1s;
+    cursor: pointer;
+}
+
+.page-direct {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.mainpage-go {
+    width: 150px;
+    height: 130px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translate(-10%, -100%);
+    text-align: center;
+    background-image: url(/images/itach.jpg);
+    background-size: cover;
+    outline: 1px solid white;
+}
+
+.mainpage-go>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-family);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+.Basketball-go {
+    width: 150px;
+    height: 130px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    text-align: center;
+    background-image: url(/images/lebron.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    outline: 1px solid white;
+}
+
+.Basketball-go>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-family);
+    color: rgb(242, 255, 255);
+    font-size: 15px;
+}
+
+.videogame-go {
+    width: 150px;
+    height: 130px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    position: absolute;
+    top: 40%;
+    left: 90%;
+    transform: translate(-90%, -100%);
+    text-align: center;
+    background-image: url(/images/rainbow-six.jpg);
+    background-size: cover;
+    background-position: center center;
+    outline: 1px solid white;
+}
+
+.videogame-go>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-family);
+    color: rgb(253, 255, 254);
+    font-size: 10px;
+    text-align: center;
+}
+
+.animego-go {
+    width: 150px;
+    height: 130px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    transform: translate(-10%, 0);
+    text-align: center;
+    background-image: url(/images/anime-bg1.jpg);
+    background-size: cover;
+    background-position: center center;
+    outline: 1px solid white;
+}
+
+.animego-go>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-family);
+    color: rgb(253, 255, 254);
+    font-size: 20px;
+    text-align: center;
+}
+
+.seinengo-go {
+    width: 150px;
+    height: 130px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    background-image: url(/images/20th.png);
+    background-size: cover;
+    background-position: center center;
+    outline: 1px solid white;
+}
+
+.seinengo-go>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-family);
+    color: rgb(253, 255, 254);
+    font-size: 20px;
+    text-align: center;
+}
+
+.solgo-go {
+    width: 150px;
+    height: 130px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 90%;
+    transform: translate(-90%, 0);
+    text-align: center;
+    background-image: url(/images/ylia.png);
+    background-size: cover;
+    background-position: center center;
+    outline: 1px solid white;
+}
+
+.solgo-go>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-family);
+    color: rgb(253, 255, 254);
+    font-size: 20px;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    /* height: 4500px; */
+    position: absolute;
+    top: 80%;
+    /* background-color: aliceblue; */
+}
+
+.cap {
+    height: 80px;
+    width: 100%;
+    text-align: center;
+}
+
+.cap>span {
+    width: 150px;
+    font-family: var(--font-family);
+    font-size: 20px;
+    background-color: var(--secondary-color);
+    color: rgb(253, 255, 254);
+    padding: 15px;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+
+.seprate {
+    width: 100%;
+    height: 30px;
+    background-color: var(--secondary-color);
+    margin-top: 100px;
+    text-align: center;
+}
+
+.seprate::after {
+    content: "Bleach";
+    font-family: var(--font-family);
+    font-size: 25px;
+    color: rgb(253, 255, 254);
+}
+
+
+/* Bleach */
+
+.bleach1 {
+    margin-top: 25px;
+    width: 100%;
+    height: 400px;
+    background-image: url(/images/bleach2.jpg);
+    background-size: cover;
+    text-align: justify;
+}
+
+.bleach1>p {
+    background-color: white;
+    font-family: var(--font-family);
+    font-size: 20px;
+    border-radius: 5px;
+    position: relative;
+    top: 101%;
+    text-transform: capitalize;
+}
+
+.bleach2 {
+    width: 100%;
+    height: 400px;
+    margin-top: 130px;
+    background-image: url(/images/bleach1.jpg);
+    background-size: cover;
+    text-align: justify;
+}
+
+.bleach2>p {
+    background-color: white;
+    font-family: var(--font-family);
+    font-size: 20px;
+    border-radius: 5px;
+    position: relative;
+    top: 101%;
+    text-transform: capitalize;
+}
+
+.seprate1 {
+    width: 100%;
+    height: 30px;
+    background-color: var(--secondary-color);
+    margin-top: 50px;
+    text-align: center;
+}
+
+.seprate1::after {
+    content: "Re:Zero";
+    font-family: var(--font-family);
+    font-size: 25px;
+    color: rgb(253, 255, 254);
+}
+
+
+/* Re:Zero */
+
+.rezero1 {
+    width: 100%;
+    height: 400px;
+    background-image: url(/images/rezero.jpg);
+    background-size: cover;
+    text-align: justify;
+    margin-top: 25px;
+}
+
+.rezero1>p {
+    background-color: white;
+    font-family: var(--font-family);
+    font-size: 20px;
+    border-radius: 5px;
+    position: relative;
+    top: 101%;
+    text-transform: capitalize;
+}
+
+.rezero2 {
+    width: 100%;
+    height: 400px;
+    background-image: url(/images/rezero2.jpg);
+    background-size: cover;
+    text-align: justify;
+    margin-top: 130px;
+}
+
+.rezero2>p {
+    background-color: white;
+    font-family: var(--font-family);
+    font-size: 20px;
+    border-radius: 5px;
+    position: relative;
+    top: 101%;
+    text-transform: capitalize;
+}
+
+.rezerobac {
+    margin-top: 50px;
+}
+
+.seprate2 {
+    width: 100%;
+    height: 30px;
+    background-color: var(--secondary-color);
+    margin-top: 50px;
+    text-align: center;
+}
+
+.seprate2::after {
+    content: "No Game No Life";
+    font-family: var(--font-family);
+    font-size: 25px;
+    color: rgb(253, 255, 254);
+}
+
+
+/* No Game No Life */
+
+.nogame1 {
+    width: 100%;
+    height: 500px;
+    background-image: url(/images/nogamenoife.jpg);
+    background-size: cover;
+    margin-top: 25px;
+    text-align: justify;
+}
+
+.nogame1>p {
+    background-color: white;
+    font-family: var(--font-family);
+    font-size: 20px;
+    border-radius: 5px;
+    position: relative;
+    top: 101%;
+    text-transform: capitalize;
+}
+
+.nogamebac {
+    margin-top: 60px;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    top: 4500px;
+    position: relative;
+}
+
+.footbox {
+    width: 15%;
+    height: 50%;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-5%, -50%);
+    transition: 2s;
+}
+
+.footbox::after {
+    content: "Shonen";
+    text-align: center;
+    color: aliceblue;
+    font-family: var(--font-family);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footbox:hover {
+    background-color: transparent;
+    transition: 2s;
+    background-image: none;
+}
+
+.footbox:hover::after {
+    text-decoration: underline yellow 2px;
+    transition: 1s;
+    font-size: 25px;
+}
+
+.footbox1 {
+    width: 15%;
+    height: 50%;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-35%, -50%);
+}
+
+.footbox1::after {
+    content: "Seinen";
+    text-align: center;
+    color: aliceblue;
+    font-family: var(--font-family);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footbox1:hover {
+    background-color: transparent;
+    transition: 2s;
+}
+
+.footbox1:hover::after {
+    text-decoration: underline yellow 2px;
+    transition: 1s;
+    font-size: 25px;
+}
+
+.footbox2 {
+    width: 15%;
+    height: 50%;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-65%, -50%);
+}
+
+.footbox2::after {
+    content: "SOL";
+    text-align: center;
+    color: aliceblue;
+    font-family: var(--font-family);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footbox2:hover {
+    background-color: transparent;
+    transition: 2s;
+}
+
+.footbox2:hover::after {
+    text-decoration: underline yellow 2px;
+    transition: 1s;
+    font-size: 25px;
+}
+
+.footbox3 {
+    width: 15%;
+    height: 50%;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    transform: translate(-95%, -50%);
+    border-radius: 50%;
+    transition: 2s;
+}
+
+.footbox3>i {
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    transition: 2s;
+}
+
+.footbox3:hover {
+    background-color: transparent;
+    transition: 2s;
+}
+
+.footbox:hover i {
+    text-decoration: underline yellow 2px;
+    transition: 1s;
+    font-size: 25px;
+}

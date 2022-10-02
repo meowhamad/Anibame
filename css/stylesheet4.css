@@ -1,0 +1,3240 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+ :root {
+    --primary-color: rgb(10, 10, 64);
+    --font-family: sans-serif;
+    --secondary-color: rgb(196, 25, 173);
+    --thirdly-color: rgb(9, 187, 29);
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+.anibame {
+    width: 100%;
+    height: 60px;
+    background-color: var(--secondary-color);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    transition: all 3s 0s;
+    border-radius: 5px;
+}
+
+.anibame>h3 {
+    font-family: var(--font-family);
+    font-style: italic;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    color: rgba(0, 247, 247, 0.834);
+}
+
+.anibame:hover {
+    margin: 10px auto;
+    width: 25%;
+    border-radius: 100%;
+    transition: 3s 1s;
+    background-color: rgba(19, 204, 237, 0.801);
+    box-shadow: 5px 5px 10px 0 rgb(9, 187, 29), -5px -5px 10px 0 rgb(9, 187, 29);
+}
+
+.anibame:hover>h3 {
+    color: var(--primary-color);
+    font-size: 30px;
+    transition: 3s 1s;
+    cursor: pointer;
+}
+
+.page-direct {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.mainpage-go {
+    width: 150px;
+    height: 130px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translate(-10%, -100%);
+    text-align: center;
+    background-image: url(/images/itach.jpg);
+    background-size: cover;
+    outline: 1px solid white;
+}
+
+.mainpage-go>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-family);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+.isekaigo-go {
+    width: 150px;
+    height: 130px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    text-align: center;
+    background-image: url(/images/isekai.jpg);
+    background-size: cover;
+    background-position: top center;
+    outline: 1px solid white;
+}
+
+.isekaigo-go>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-family);
+    color: rgb(242, 255, 255);
+    font-size: 25px;
+}
+
+.videogame-go {
+    width: 150px;
+    height: 130px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    position: absolute;
+    top: 40%;
+    left: 90%;
+    transform: translate(-90%, -100%);
+    text-align: center;
+    background-image: url(/images/rainbow-six.jpg);
+    background-size: cover;
+    background-position: center center;
+    outline: 1px solid white;
+}
+
+.videogame-go>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-family);
+    color: rgb(253, 255, 254);
+    font-size: 10px;
+    text-align: center;
+}
+
+.animego-go {
+    width: 150px;
+    height: 130px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    transform: translate(-10%, 0);
+    text-align: center;
+    background-image: url(/images/anime-bg1.jpg);
+    background-size: cover;
+    background-position: center center;
+    outline: 1px solid white;
+}
+
+.animego-go>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-family);
+    color: rgb(253, 255, 254);
+    font-size: 20px;
+    text-align: center;
+}
+
+.seinengo-go {
+    width: 150px;
+    height: 130px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    background-image: url(/images/20th.png);
+    background-size: cover;
+    background-position: center center;
+    outline: 1px solid white;
+}
+
+.seinengo-go>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-family);
+    color: rgb(253, 255, 254);
+    font-size: 20px;
+    text-align: center;
+}
+
+.solgo-go {
+    width: 150px;
+    height: 130px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 90%;
+    transform: translate(-90%, 0);
+    text-align: center;
+    background-image: url(/images/ylia.png);
+    background-size: cover;
+    background-position: center center;
+    outline: 1px solid white;
+}
+
+.solgo-go>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-family);
+    color: rgb(253, 255, 254);
+    font-size: 20px;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    height: 10000px;
+    position: absolute;
+    top: 80%;
+    /* background-color: aliceblue; */
+}
+
+.cap {
+    height: 150px;
+    width: 100%;
+    text-align: justify;
+    position: relative;
+}
+
+.cap>p {
+    width: 50%;
+    font-family: var(--font-family);
+    font-size: 20px;
+    background-color: var(--secondary-color);
+    color: rgb(253, 255, 254);
+    border-radius: 10px;
+    padding: 15px;
+    text-transform: capitalize;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.seprate {
+    width: 100%;
+    height: 30px;
+    background-color: var(--secondary-color);
+    margin-top: 100px;
+    text-align: center;
+}
+
+.seprate::after {
+    content: "Teams";
+    font-family: var(--font-family);
+    font-size: 25px;
+    color: rgb(253, 255, 254);
+}
+
+.teams {
+    margin-top: 50px;
+    width: 100%;
+    height: 700px;
+    background-image: url(/images/jordan.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.western {
+    width: 40%;
+    height: 8%;
+    background-color: var(--secondary-color);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    transform: translate(-50%, 0);
+}
+
+.western::after {
+    content: "Western conference";
+    font-family: var(--font-family);
+    font-size: 15px;
+    color: rgb(253, 255, 254);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.west {
+    width: 20%;
+    height: 100px;
+    background-color: black;
+}
+
+.thunder {
+    position: absolute;
+    top: 23%;
+    left: 25%;
+    transform: translate(-50%, 0);
+    background-image: url(/images/thunders.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.lakers {
+    position: absolute;
+    top: 38%;
+    left: 25%;
+    transform: translate(-50%, 0);
+    background-image: url(/images/lakers.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.portland {
+    position: absolute;
+    top: 53%;
+    left: 25%;
+    transform: translate(-50%, 0);
+    background-image: url(/images/portland.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.clippers {
+    position: absolute;
+    top: 68%;
+    left: 25%;
+    transform: translate(-50%, 0);
+    background-image: url(/images/clippers.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.warriors {
+    position: absolute;
+    top: 83%;
+    left: 25%;
+    transform: translate(-50%, 0);
+    background-image: url(/images/warriors.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/* East */
+
+.eastern {
+    width: 40%;
+    height: 8%;
+    background-color: var(--secondary-color);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    left: 75%;
+    top: 10%;
+    transform: translate(-50%, 0);
+}
+
+.eastern::after {
+    content: "Eastern conference";
+    font-family: var(--font-family);
+    font-size: 15px;
+    color: rgb(253, 255, 254);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.east {
+    width: 20%;
+    height: 100px;
+    background-color: black;
+}
+
+.raptors {
+    position: absolute;
+    top: 23%;
+    left: 75%;
+    transform: translate(-50%, 0);
+    background-image: url(/images/raptors.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.bulls {
+    position: absolute;
+    top: 38%;
+    left: 75%;
+    transform: translate(-50%, 0);
+    background-image: url(/images/bulls.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.magic {
+    position: absolute;
+    top: 53%;
+    left: 75%;
+    transform: translate(-50%, 0);
+    background-image: url(/images/magic.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.celtics {
+    position: absolute;
+    top: 68%;
+    left: 75%;
+    transform: translate(-50%, 0);
+    background-image: url(/images/celtic.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.knicks {
+    position: absolute;
+    top: 83%;
+    left: 75%;
+    transform: translate(-50%, 0);
+    background-image: url(/images/knicks.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#raptors {
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+    background-color: aliceblue;
+    position: relative;
+    background-image: url(/images/raptors.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#raptors::after {
+    content: "All Stars";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background-color: aliceblue;
+    font-size: 25px;
+    font-family: var(--font-family);
+}
+
+.box1 {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(128, 0, 30);
+    background-image: url(/images/vanvleet.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    text-align: center;
+}
+
+.box1::after {
+    content: "Fred Vanvleet";
+    position: relative;
+    top: 100%;
+    background-color: black;
+    color: rgb(253, 255, 254);
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box2 {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(128, 0, 30);
+    background-image: url(/images/GaryTrentjr.webp);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    text-align: center;
+}
+
+.box2::after {
+    content: "Gary Trent Jr.";
+    position: relative;
+    top: 100%;
+    background-color: black;
+    color: rgb(253, 255, 254);
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box3 {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(128, 0, 30);
+    background-image: url(/images/OGAnunoby.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    text-align: center;
+}
+
+.box3::after {
+    content: "Scottie Barnes";
+    position: relative;
+    top: 100%;
+    background-color: black;
+    color: rgb(253, 255, 254);
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box4 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(128, 0, 30);
+    background-image: url(/images/ScottieBarnes.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    text-align: center;
+}
+
+.box4::after {
+    content: "OG Anunoby";
+    position: relative;
+    top: 100%;
+    background-color: black;
+    color: rgb(253, 255, 254);
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box5 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(128, 0, 30);
+    background-image: url(/images/pascal.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 85%;
+    text-align: center;
+}
+
+.box5::after {
+    content: "Pascal Siakam";
+    position: relative;
+    top: 100%;
+    background-color: black;
+    color: rgb(253, 255, 254);
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box6 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(128, 0, 30);
+    background-image: url(/images/lowry.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    text-align: center;
+}
+
+.box6::after {
+    content: "kyle Lowry";
+    position: relative;
+    top: 100%;
+    background-color: black;
+    color: rgb(253, 255, 254);
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box7 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(128, 0, 30);
+    background-image: url(/images/demar.webp);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    text-align: center;
+}
+
+.box7::after {
+    content: "Demar Derozan";
+    position: relative;
+    top: 100%;
+    background-color: black;
+    color: rgb(253, 255, 254);
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box8 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(128, 0, 30);
+    background-image: url(/images/tracy.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    text-align: center;
+}
+
+.box8::after {
+    content: "Tracy Mcgrady";
+    position: relative;
+    top: 100%;
+    background-color: black;
+    color: rgb(253, 255, 254);
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box9 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(128, 0, 30);
+    background-image: url(/images/vince.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 65%;
+    text-align: center;
+}
+
+.box9::after {
+    content: "Vince Carter";
+    position: relative;
+    top: 100%;
+    background-color: black;
+    color: rgb(253, 255, 254);
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box10 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(128, 0, 30);
+    background-image: url(/images/bosh.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 85%;
+    text-align: center;
+}
+
+.box10::after {
+    content: "Chris Bosh";
+    position: relative;
+    top: 100%;
+    background-color: black;
+    color: rgb(253, 255, 254);
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+
+/* bulls */
+
+#bulls {
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+    background-color: aliceblue;
+    position: relative;
+    background-image: url(/images/bulls.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#bulls::after {
+    content: "All Stars";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background-color: aliceblue;
+    font-size: 25px;
+    font-family: var(--font-family);
+}
+
+.box11 {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(249, 0, 0);
+    background-image: url(/images/lonzo.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    text-align: center;
+}
+
+.box11::after {
+    content: "Lonzo Ball";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box12 {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(255, 0, 0);
+    background-image: url(/images/zach.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    text-align: center;
+}
+
+.box12::after {
+    content: "Zach Lavine";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box13 {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(255, 0, 0);
+    background-image: url(/images/demar.webp);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    text-align: center;
+}
+
+.box13::after {
+    content: "Demar Derozan";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box14 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+    background-image: url(/images/patrick.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    text-align: center;
+}
+
+.box14::after {
+    content: "Patrick Williams";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box15 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+    background-image: url(/images/nikola.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 85%;
+    text-align: center;
+}
+
+.box15::after {
+    content: "Nikola Vucevic";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box16 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+    background-image: url(/images/derrick.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    text-align: center;
+}
+
+.box16::after {
+    content: "Derrick Rose";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box17 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+    background-image: url(/images/mj.webp);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    text-align: center;
+}
+
+.box17::after {
+    content: "Michael Jordan";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box18 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+    background-image: url(/images/pipen.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    text-align: center;
+}
+
+.box18::after {
+    content: "Scottie Pippen";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box19 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+    background-image: url(/images/dennis.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 65%;
+    text-align: center;
+}
+
+.box19::after {
+    content: "Dennis Rodman";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box20 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+    background-image: url(/images/gilmore.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 85%;
+    text-align: center;
+}
+
+.box20::after {
+    content: "Artis Gilmore";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+#magic {
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+    background-color: aliceblue;
+    position: relative;
+    background-image: url(/images/magic.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#magic::after {
+    content: "All Stars";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background-color: aliceblue;
+    font-size: 25px;
+    font-family: var(--font-family);
+}
+
+.box21 {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(0, 50, 249);
+    background-image: url(/images/fultz.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    text-align: center;
+}
+
+.box21::after {
+    content: "Markelle Fultz";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box22 {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(0, 50, 249);
+    background-image: url(/images/suggs.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    text-align: center;
+}
+
+.box22::after {
+    content: "Jalen Suggs";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box23 {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(0, 50, 249);
+    background-image: url(/images/wagner.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    text-align: center;
+}
+
+.box23::after {
+    content: "Franz Wagner";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box24 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 50, 249);
+    background-image: url(/images/isaac.png);
+    background-size: cover;
+    background-position: top center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    text-align: center;
+}
+
+.box24::after {
+    content: "Jonathan Isaac";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box25 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 50, 249);
+    background-image: url(/images/wandell.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 85%;
+    text-align: center;
+}
+
+.box25::after {
+    content: "Wandelle Carter";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box26 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 50, 249);
+    background-image: url(/images/penny.png);
+    background-size: cover;
+    background-position: top center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    text-align: center;
+}
+
+.box26::after {
+    content: "Penny Hardaway";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box27 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 50, 249);
+    background-image: url(/images/tracy.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    text-align: center;
+}
+
+.box27::after {
+    content: "Tracy Mcgrady";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box28 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 50, 249);
+    background-image: url(/images/hill.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    text-align: center;
+}
+
+.box28::after {
+    content: "Grant Hill";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box29 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 50, 249);
+    background-image: url(/images/howard.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 65%;
+    text-align: center;
+}
+
+.box29::after {
+    content: "Dwight Howard";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box30 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 50, 249);
+    background-image: url(/images/shaq.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 85%;
+    text-align: center;
+}
+
+.box30::after {
+    content: "Shaquille O'neal";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+
+/* celtics */
+
+#celtics {
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+    background-color: aliceblue;
+    position: relative;
+    background-image: url(/images/celtic.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#celtics::after {
+    content: "All Stars";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background-color: aliceblue;
+    font-size: 25px;
+    font-family: var(--font-family);
+}
+
+.box31 {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(5, 164, 26);
+    background-image: url(/images/smart.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    text-align: center;
+}
+
+.box31::after {
+    content: "Marcus Smart";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box32 {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(5, 164, 26);
+    background-image: url(/images/brown.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    text-align: center;
+}
+
+.box32::after {
+    content: "Jaylen Brown";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box33 {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(5, 164, 26);
+    background-image: url(/images/tatum.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    text-align: center;
+}
+
+.box33::after {
+    content: "Jayson Tatum";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box34 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(5, 164, 26);
+    background-image: url(/images/al.png);
+    background-size: cover;
+    background-position: top center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    text-align: center;
+}
+
+.box34::after {
+    content: "Al Horford";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box35 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(5, 164, 26);
+    background-image: url(/images/robert.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 85%;
+    text-align: center;
+}
+
+.box35::after {
+    content: "Robert Williams";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box36 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(5, 164, 26);
+    background-image: url(/images/cousy.jpeg);
+    background-size: cover;
+    background-position: top center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    text-align: center;
+}
+
+.box36::after {
+    content: "Bob Cousy";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box37 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(5, 164, 26);
+    background-image: url(/images/ray.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    text-align: center;
+}
+
+.box37::after {
+    content: "Ray Allen";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box38 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(5, 164, 26);
+    background-image: url(/images/pierce.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    text-align: center;
+}
+
+.box38::after {
+    content: "Paul Pierce";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box39 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(5, 164, 26);
+    background-image: url(/images/garnet.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 65%;
+    text-align: center;
+}
+
+.box39::after {
+    content: "Kevin Garnett";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box40 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(5, 164, 26);
+    background-image: url(/images/bill.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 85%;
+    text-align: center;
+}
+
+.box40::after {
+    content: "Bill Russel";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+
+/* Knicks */
+
+#knicks {
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+    background-color: aliceblue;
+    position: relative;
+    background-image: url(/images/knicks.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#knicks::after {
+    content: "All Stars";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background-color: aliceblue;
+    font-size: 25px;
+    font-family: var(--font-family);
+}
+
+.box41 {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(255, 106, 0);
+    background-image: url(/images/brunson.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    text-align: center;
+}
+
+.box41::after {
+    content: "Jalen Brunson";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box42 {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(255, 106, 0);
+    background-image: url(/images/evan.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    text-align: center;
+}
+
+.box42::after {
+    content: "Evan Fournier";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box43 {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(255, 106, 0);
+    background-image: url(/images/rj.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    text-align: center;
+}
+
+.box43::after {
+    content: "Rj Barrett";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box44 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 106, 0);
+    background-image: url(/images/julius.png);
+    background-size: cover;
+    background-position: top center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    text-align: center;
+}
+
+.box44::after {
+    content: "julius Randle";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box45 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 106, 0);
+    background-image: url(/images/robinson.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 85%;
+    text-align: center;
+}
+
+.box45::after {
+    content: "Mitchell Robinson";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box46 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 106, 0);
+    background-image: url(/images/fraizer.png);
+    background-size: cover;
+    background-position: top center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    text-align: center;
+}
+
+.box46::after {
+    content: "Walt Fraizer";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box47 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 106, 0);
+    background-image: url(/images/earl.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    text-align: center;
+}
+
+.box47::after {
+    content: "Earl Monroe";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box48 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 106, 0);
+    background-image: url(/images/king.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    text-align: center;
+}
+
+.box48::after {
+    content: "Bernard King";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box49 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 106, 0);
+    background-image: url(/images/carmelo.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 65%;
+    text-align: center;
+}
+
+.box49::after {
+    content: "Carmelo Anthony";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box50 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 106, 0);
+    background-image: url(/images/ewing.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 85%;
+    text-align: center;
+}
+
+.box50::after {
+    content: "Patrick Ewing";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+
+/* Thunder */
+
+#thunder {
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+    background-color: aliceblue;
+    position: relative;
+    background-image: url(/images/thunders.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#thunder::after {
+    content: "All Stars";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background-color: aliceblue;
+    font-size: 25px;
+    font-family: var(--font-family);
+}
+
+.box51 {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(54, 121, 236);
+    background-image: url(/images/shai.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    text-align: center;
+}
+
+.box51::after {
+    content: "shai gilgeous-alexander";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box52 {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(54, 121, 236);
+    background-image: url(/images/josh.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    text-align: center;
+}
+
+.box52::after {
+    content: "Josh Giddey";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box53 {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(54, 121, 236);
+    background-image: url(/images/dort.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    text-align: center;
+}
+
+.box53::after {
+    content: "Luguentz Dort";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box54 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(54, 121, 236);
+    background-image: url(/images/bazley.png);
+    background-size: cover;
+    background-position: top center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    text-align: center;
+}
+
+.box54::after {
+    content: "Darius Bazley";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box55 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(54, 121, 236);
+    background-image: url(/images/jeremiah.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 85%;
+    text-align: center;
+}
+
+.box55::after {
+    content: "Jeremiah Robinson";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box56 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(54, 121, 236);
+    background-image: url(/images/payton.png);
+    background-size: cover;
+    background-position: top center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    text-align: center;
+}
+
+.box56::after {
+    content: "Gary Payton";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box57 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(54, 121, 236);
+    background-image: url(/images/russel.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    text-align: center;
+}
+
+.box57::after {
+    content: "Russell Westbrook";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box58 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(54, 121, 236);
+    background-image: url(/images/harden.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    text-align: center;
+}
+
+.box58::after {
+    content: "James Harden";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box59 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(54, 121, 236);
+    background-image: url(/images/kd.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 65%;
+    text-align: center;
+}
+
+.box59::after {
+    content: "Kevin Durant";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box60 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(54, 121, 236);
+    background-image: url(/images/kemp.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 85%;
+    text-align: center;
+}
+
+.box60::after {
+    content: "Shawn Kemp";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+
+/* Lakers */
+
+#lakers {
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+    background-color: aliceblue;
+    position: relative;
+    background-image: url(/images/lakers.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#lakers::after {
+    content: "All Stars";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background-color: aliceblue;
+    font-size: 25px;
+    font-family: var(--font-family);
+}
+
+.box61 {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(80, 2, 126);
+    background-image: url(/images/russel.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    text-align: center;
+}
+
+.box61::after {
+    content: "Russell Westbrook";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box62 {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(80, 2, 126);
+    background-image: url(/images/nunn.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    text-align: center;
+}
+
+.box62::after {
+    content: "Kendrick Nunn";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box63 {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(80, 2, 126);
+    background-image: url(/images/lj.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    text-align: center;
+}
+
+.box63::after {
+    content: "Lebron James";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box64 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(80, 2, 126);
+    background-image: url(/images/davis.png);
+    background-size: cover;
+    background-position: top center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    text-align: center;
+}
+
+.box64::after {
+    content: "Anthony Davis";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box65 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(80, 2, 126);
+    background-image: url(/images/thomas.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 85%;
+    text-align: center;
+}
+
+.box65::after {
+    content: "Thomas Bryant";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box66 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(80, 2, 126);
+    background-image: url(/images/magicjohn.png);
+    background-size: cover;
+    background-position: top center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    text-align: center;
+}
+
+.box66::after {
+    content: "Magic Johnson";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box67 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(80, 2, 126);
+    background-image: url(/images/jerrywest.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    text-align: center;
+}
+
+.box67::after {
+    content: "Jerry West";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box68 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(80, 2, 126);
+    background-image: url(/images/kobe.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    text-align: center;
+}
+
+.box68::after {
+    content: "Kobe Bryant";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box69 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(80, 2, 126);
+    background-image: url(/images/shaq.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 65%;
+    text-align: center;
+}
+
+.box69::after {
+    content: "Shaquille O'neal";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box70 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(80, 2, 126);
+    background-image: url(/images/kareem.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 85%;
+    text-align: center;
+}
+
+.box70::after {
+    content: "kareem abdul jabbar";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+
+/* Portland */
+
+#portland {
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+    background-color: aliceblue;
+    position: relative;
+    background-image: url(/images/portland.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#portland::after {
+    content: "All Stars";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background-color: aliceblue;
+    font-size: 25px;
+    font-family: var(--font-family);
+}
+
+.box71 {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(126, 2, 6);
+    background-image: url(/images/lilard.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    text-align: center;
+}
+
+.box71::after {
+    content: "Damian Lilard";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box72 {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(126, 2, 6);
+    background-image: url(/images/anfernee.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    text-align: center;
+}
+
+.box72::after {
+    content: "Anfernee Simons";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box73 {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(126, 2, 6);
+    background-image: url(/images/little.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    text-align: center;
+}
+
+.box73::after {
+    content: "Nassir Little";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box74 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(126, 2, 6);
+    background-image: url(/images/grant.png);
+    background-size: cover;
+    background-position: top center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    text-align: center;
+}
+
+.box74::after {
+    content: "Jaerami Grant";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box75 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(126, 2, 6);
+    background-image: url(/images/nurkic.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 85%;
+    text-align: center;
+}
+
+.box75::after {
+    content: "Jusuf Nurkic";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box76 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(126, 2, 6);
+    background-image: url(/images/lilard.png);
+    background-size: cover;
+    background-position: top center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    text-align: center;
+}
+
+.box76::after {
+    content: "Damian Lilard";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box77 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(126, 2, 6);
+    background-image: url(/images/roy.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    text-align: center;
+}
+
+.box77::after {
+    content: "Brandon Roy";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box78 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(126, 2, 6);
+    background-image: url(/images/drexler.webp);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    text-align: center;
+}
+
+.box78::after {
+    content: "Clyde Drexler";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box79 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(126, 2, 6);
+    background-image: url(/images/aldrige.webp);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 65%;
+    text-align: center;
+}
+
+.box79::after {
+    content: "LaMarcus Aldrige";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box80 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(126, 2, 6);
+    background-image: url(/images/walton.webp);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 85%;
+    text-align: center;
+}
+
+.box80::after {
+    content: "Bill Walton";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+
+/* Clippers */
+
+#clippers {
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+    background-color: aliceblue;
+    position: relative;
+    background-image: url(/images/clippers.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#clippers::after {
+    content: "All Stars";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background-color: aliceblue;
+    font-size: 25px;
+    font-family: var(--font-family);
+}
+
+.box81 {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(6, 2, 126);
+    background-image: url(/images/wall.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    text-align: center;
+}
+
+.box81::after {
+    content: "John Wall";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box82 {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(6, 2, 126);
+    background-image: url(/images/george.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    text-align: center;
+}
+
+.box82::after {
+    content: "Paul George";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box83 {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(6, 2, 126);
+    background-image: url(/images/kawhi.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    text-align: center;
+}
+
+.box83::after {
+    content: "Kawhi Leonard";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box84 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(6, 2, 126);
+    background-image: url(/images/batum.png);
+    background-size: cover;
+    background-position: top center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    text-align: center;
+}
+
+.box84::after {
+    content: "Nicolas Batum";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box85 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(6, 2, 126);
+    background-image: url(/images/zubak.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 85%;
+    text-align: center;
+}
+
+.box85::after {
+    content: "Ivica zubac";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box86 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(6, 2, 126);
+    background-image: url(/images/chrispaul.png);
+    background-size: cover;
+    background-position: top center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    text-align: center;
+}
+
+.box86::after {
+    content: "Chris Paul";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box87 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(6, 2, 126);
+    background-image: url(/images/smith.jpg);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    text-align: center;
+}
+
+.box87::after {
+    content: "Randy Smith";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box88 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(6, 2, 126);
+    background-image: url(/images/corey.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    text-align: center;
+}
+
+.box88::after {
+    content: "Corey Maggette";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box89 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(6, 2, 126);
+    background-image: url(/images/blake.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 65%;
+    text-align: center;
+}
+
+.box89::after {
+    content: "Blake Griffin";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box90 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(6, 2, 126);
+    background-image: url(/images/mcadoo.jpg);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 85%;
+    text-align: center;
+}
+
+.box90::after {
+    content: "Bob McAdoo";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+
+/* Warriors */
+
+#warriors {
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+    background-color: aliceblue;
+    position: relative;
+    background-image: url(/images/warriors.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#warriors::after {
+    content: "All Stars";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background-color: aliceblue;
+    font-size: 25px;
+    font-family: var(--font-family);
+}
+
+.box91 {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(6, 2, 126);
+    background-image: url(/images/curry.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    text-align: center;
+}
+
+.box91::after {
+    content: "Stephen Curry";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box92 {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(6, 2, 126);
+    background-image: url(/images/klay.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    text-align: center;
+}
+
+.box92::after {
+    content: "Klay Thompson";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box93 {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(6, 2, 126);
+    background-image: url(/images/wiggins.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    text-align: center;
+}
+
+.box93::after {
+    content: "Andrew Wiggins";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box94 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(6, 2, 126);
+    background-image: url(/images/green.png);
+    background-size: cover;
+    background-position: top center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    text-align: center;
+}
+
+.box94::after {
+    content: "Draymond Green";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box95 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(6, 2, 126);
+    background-image: url(/images/looney.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    left: 85%;
+    text-align: center;
+}
+
+.box95::after {
+    content: "Kevon Looney";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box96 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(6, 2, 126);
+    background-image: url(/images/curry.png);
+    background-size: cover;
+    background-position: top center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    text-align: center;
+}
+
+.box96::after {
+    content: "Stephen Curry";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box97 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(6, 2, 126);
+    background-image: url(/images/mullin.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    text-align: center;
+}
+
+.box97::after {
+    content: "Chris Mullin";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box98 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(6, 2, 126);
+    background-image: url(/images/kd.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    text-align: center;
+}
+
+.box98::after {
+    content: "Kevin Durant";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box99 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(6, 2, 126);
+    background-image: url(/images/barry.jpg);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 65%;
+    text-align: center;
+}
+
+.box99::after {
+    content: "Rick Barry";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+.box100 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(6, 2, 126);
+    background-image: url(/images/wilt.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 85%;
+    text-align: center;
+}
+
+.box100::after {
+    content: "Wilt Chamberlin";
+    position: relative;
+    top: 100%;
+    background-color: white;
+    color: black;
+    font-family: var(--font-family);
+    border-radius: 5px;
+}
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    top: 8000px;
+    position: relative;
+}
+
+.footbox {
+    width: 15%;
+    height: 50%;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-5%, -50%);
+    transition: 2s;
+}
+
+.footbox::after {
+    content: "Shonen";
+    text-align: center;
+    color: aliceblue;
+    font-family: var(--font-family);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footbox:hover {
+    background-color: transparent;
+    transition: 2s;
+    background-image: none;
+}
+
+.footbox:hover::after {
+    text-decoration: underline yellow 2px;
+    transition: 1s;
+    font-size: 25px;
+}
+
+.footbox1 {
+    width: 15%;
+    height: 50%;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-35%, -50%);
+}
+
+.footbox1::after {
+    content: "Isekai";
+    text-align: center;
+    color: aliceblue;
+    font-family: var(--font-family);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footbox1:hover {
+    background-color: transparent;
+    transition: 2s;
+}
+
+.footbox1:hover::after {
+    text-decoration: underline yellow 2px;
+    transition: 1s;
+    font-size: 25px;
+}
+
+.footbox2 {
+    width: 15%;
+    height: 50%;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-65%, -50%);
+}
+
+.footbox2::after {
+    content: "SOL";
+    text-align: center;
+    color: aliceblue;
+    font-family: var(--font-family);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footbox2:hover {
+    background-color: transparent;
+    transition: 2s;
+}
+
+.footbox2:hover::after {
+    text-decoration: underline yellow 2px;
+    transition: 1s;
+    font-size: 25px;
+}
+
+.footbox3 {
+    width: 15%;
+    height: 50%;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    transform: translate(-95%, -50%);
+    border-radius: 50%;
+    transition: 2s;
+}
+
+.footbox3>i {
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    transition: 2s;
+}
+
+.footbox3:hover {
+    background-color: transparent;
+    transition: 2s;
+}
+
+.footbox:hover i {
+    text-decoration: underline yellow 2px;
+    transition: 1s;
+    font-size: 25px;
+}

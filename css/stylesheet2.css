@@ -1,0 +1,946 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+ :root {
+    --primary-color: rgb(10, 10, 64);
+    --font-family: sans-serif;
+    --secondary-color: rgb(196, 25, 173);
+    --thirdly-color: rgb(9, 187, 29);
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+.anibame {
+    width: 100%;
+    height: 60px;
+    background-color: var(--secondary-color);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    transition: all 3s 0s;
+    border-radius: 5px;
+}
+
+.anibame>h3 {
+    font-family: var(--font-family);
+    font-style: italic;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    color: rgba(0, 247, 247, 0.834);
+}
+
+.anibame:hover {
+    margin: 10px auto;
+    width: 25%;
+    border-radius: 100%;
+    transition: 3s 1s;
+    background-color: rgba(19, 204, 237, 0.801);
+    box-shadow: 5px 5px 10px 0 rgb(9, 187, 29), -5px -5px 10px 0 rgb(9, 187, 29);
+}
+
+.anibame:hover>h3 {
+    color: var(--primary-color);
+    font-size: 30px;
+    transition: 3s 1s;
+    cursor: pointer;
+}
+
+
+/* header */
+
+.page-direct {
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+
+.mainpage-go {
+    width: 150px;
+    height: 130px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+    text-align: center;
+    background-image: url(/images/itach.jpg);
+    background-size: cover;
+    outline: 1px solid white;
+}
+
+.mainpage-go>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-family);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+.Basketball-go {
+    width: 150px;
+    height: 130px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-image: url(/images/lebron.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    outline: 1px solid white;
+}
+
+.Basketball-go>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-family);
+    color: rgb(242, 255, 255);
+    font-size: 15px;
+}
+
+.videogame-go {
+    width: 150px;
+    height: 130px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-90%, -50%);
+    text-align: center;
+    background-image: url(/images/rainbow-six.jpg);
+    background-size: cover;
+    background-position: center center;
+    outline: 1px solid white;
+}
+
+.videogame-go>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-family);
+    color: rgb(253, 255, 254);
+    font-size: 13px;
+    text-align: center;
+}
+
+.about-page {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    margin-top: 25px;
+}
+
+.about-page>div {
+    width: 50%;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+    font-size: 20px;
+    font-family: var(--font-family);
+    letter-spacing: 1px;
+    padding: 10px;
+    color: aliceblue;
+}
+
+.anime-genres {
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+
+.box {
+    width: 15%;
+    height: 50%;
+    float: left;
+    border-radius: 5px;
+}
+
+.box1 {
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-5%, -50%);
+    background-image: url(/images/anime-bg1.jpg);
+    background-size: cover;
+}
+
+.box1::after {
+    content: "Shonen";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-family);
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.box2 {
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-35%, -50%);
+    background-image: url(/images/isekai.jpg);
+    background-size: cover;
+}
+
+.box2::after {
+    content: "Isekai";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-family);
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.box3 {
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-65%, -50%);
+    background-image: url(/images/20th.png);
+    background-size: cover;
+}
+
+.box3::after {
+    content: "Seinen";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-family);
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.box4 {
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    transform: translate(-95%, -50%);
+    background-image: url(/images/ylia.png);
+    background-size: cover;
+}
+
+.box4::after {
+    content: "SOL";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-family);
+    font-size: 20px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.BackGround2 {
+    width: 100%;
+    height: 670px;
+    background-image: url(/images/anime-bg2.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    top: 390px;
+}
+
+.all-of-genres {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 550px;
+}
+
+.all-of-genres::after {
+    content: "I'm Just showing you most popular genres, not all of them if you want to see all of them and read about them click on the 'Anime Genres'.";
+    width: 50%;
+    height: 100px;
+    background-color: var(--secondary-color);
+    font-family: var(--font-family);
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+    text-transform: capitalize;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#Anime-Genres {
+    width: 300px;
+    height: 80px;
+    position: absolute;
+    top: 800px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: var(--secondary-color);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 2s;
+}
+
+#Anime-Genres>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: var(--font-family);
+    font-size: 20px;
+}
+
+#Anime-Genres:hover {
+    transition: 2s;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: var(--thirdly-color);
+    top: 750px;
+}
+
+#Anime-Genres:hover span {
+    font-size: 15px;
+    font-family: serif;
+    transition: 2s;
+}
+
+
+/* End of header */
+
+
+/* Main */
+
+main {
+    height: 10000px;
+    width: 100%;
+    position: absolute;
+    top: 1570px;
+}
+
+div[name] {
+    margin-top: 50px;
+    width: 100%;
+    height: 30px;
+    background-color: var(--secondary-color);
+    position: relative;
+}
+
+div[name]::after {
+    content: "Fullmetal Alchemist";
+    color: white;
+    font-size: 20px;
+    font-family: var(--font-family);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fma1 {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-image: url(/images/FMA/fma1.jpg);
+    text-align: justify;
+    margin-top: 50px;
+}
+
+.fma1>p {
+    position: relative;
+    width: 100%;
+    top: 100%;
+    background-color: aliceblue;
+    font-size: 20px;
+    font-family: var(--font-family);
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+
+.fma2 {
+    margin-top: 220px;
+    background-image: url(/images/FMA/PPhKgzo.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    text-align: justify;
+}
+
+.fma2>p {
+    position: relative;
+    width: 100%;
+    top: 100%;
+    background-color: aliceblue;
+    font-size: 20px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    font-family: var(--font-family);
+}
+
+
+/* Naruto */
+
+.seprate {
+    width: 100%;
+    height: 30px;
+    background-color: var(--secondary-color);
+    margin-top: 50px;
+    position: relative;
+}
+
+.seprate::after {
+    content: "Naruto";
+    color: white;
+    font-family: var(--font-family);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.naruto1 {
+    width: 100%;
+    height: 400px;
+    background-image: url(/images/naruto1.jpg);
+    background-size: cover;
+    margin-top: 50px;
+    text-align: justify;
+}
+
+.naruto1>p {
+    position: relative;
+    width: 100%;
+    top: 100%;
+    background-color: aliceblue;
+    font-size: 20px;
+    font-family: var(--font-family);
+    text-transform: capitalize;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+.naruto2 {
+    width: 100%;
+    height: 500px;
+    background-image: url(/images/naruto2.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    margin-top: 190px;
+}
+
+.naruto2>p {
+    position: relative;
+    width: 100%;
+    top: 105%;
+    background-color: aliceblue;
+    font-size: 20px;
+    font-family: var(--font-family);
+    text-transform: capitalize;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+
+/* Naruto Shippuden */
+
+.seprate2 {
+    width: 100%;
+    height: 30px;
+    background-color: var(--secondary-color);
+    margin-top: 80px;
+    position: relative;
+}
+
+.seprate2::after {
+    content: "Naruto Shippuden";
+    color: white;
+    font-family: var(--font-family);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.narutoshipu1 {
+    width: 100%;
+    height: 500px;
+    background-image: url(/images/narutoshippuden2.jpg);
+    background-size: cover;
+    margin-top: 50px;
+    text-align: justify;
+}
+
+.narutoshipu1>p {
+    position: relative;
+    width: 100%;
+    top: 100%;
+    background-color: aliceblue;
+    font-size: 20px;
+    font-family: var(--font-family);
+    text-transform: capitalize;
+    border-radius: 5px;
+    margin-top: 3px;
+    text-transform: capitalize;
+}
+
+.narutoshipu2 {
+    width: 100%;
+    height: 500px;
+    background-image: url(/images/narutoshippuden1.jpg);
+    background-size: cover;
+    margin-top: 220px;
+    text-align: justify;
+}
+
+.narutoshipu2>p {
+    position: relative;
+    width: 100%;
+    top: 100%;
+    background-color: aliceblue;
+    font-size: 20px;
+    font-family: var(--font-family);
+    text-transform: capitalize;
+    border-radius: 5px;
+    margin-top: 3px;
+    text-transform: capitalize;
+}
+
+.seprate3 {
+    width: 100%;
+    height: 30px;
+    background-color: var(--secondary-color);
+    margin-top: 50px;
+    position: relative;
+}
+
+.seprate3::after {
+    content: "Dragonball";
+    color: white;
+    font-family: var(--font-family);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dragonballdoc {
+    background-color: white;
+    text-align: justify;
+    font-family: var(--font-family);
+    font-size: 20px;
+    margin-top: 25px;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.seprate4 {
+    width: 100%;
+    height: 30px;
+    background-color: var(--secondary-color);
+    margin-top: 50px;
+    position: relative;
+}
+
+.dragon1 {
+    width: 100%;
+    height: 500px;
+    background-image: url(/images/kid-goku.jpg);
+    background-size: cover;
+    margin-top: 50px;
+    text-align: justify;
+}
+
+.dragon1>p {
+    position: relative;
+    width: 100%;
+    top: 100%;
+    background-color: aliceblue;
+    font-size: 20px;
+    font-family: var(--font-family);
+    text-transform: capitalize;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+.dragon2 {
+    width: 100%;
+    height: 400px;
+    margin-top: 130px;
+    background-image: url(/images/kid-goku2.jpg);
+    background-size: cover;
+}
+
+.dragon2>p {
+    position: relative;
+    width: 100%;
+    top: 100%;
+    background-color: aliceblue;
+    font-size: 20px;
+    font-family: var(--font-family);
+    text-transform: capitalize;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+.seprate5 {
+    width: 100%;
+    height: 30px;
+    background-color: var(--secondary-color);
+    margin-top: 50px;
+    position: relative;
+}
+
+.seprate5::after {
+    content: "Dragon ball z";
+    color: white;
+    text-transform: capitalize;
+    font-family: var(--font-family);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.z1 {
+    width: 100%;
+    height: 400px;
+    background-image: url(/images/z1.jpg);
+    background-size: cover;
+    margin-top: 25px;
+    text-align: justify;
+}
+
+.z1>p {
+    position: relative;
+    width: 100%;
+    top: 100%;
+    background-color: aliceblue;
+    font-size: 20px;
+    font-family: var(--font-family);
+    text-transform: capitalize;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+.z2 {
+    width: 100%;
+    height: 400px;
+    background-image: url(/images/z2.jpg);
+    background-size: cover;
+    margin-top: 130px;
+}
+
+.z2>p {
+    position: relative;
+    width: 100%;
+    top: 100%;
+    background-color: aliceblue;
+    font-size: 20px;
+    font-family: var(--font-family);
+    text-transform: capitalize;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+.seprate6 {
+    width: 100%;
+    height: 30px;
+    background-color: var(--secondary-color);
+    margin-top: 50px;
+    position: relative;
+}
+
+.seprate6::after {
+    content: "Dragon ball GT";
+    color: white;
+    text-transform: capitalize;
+    font-family: var(--font-family);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gt1 {
+    width: 100%;
+    height: 400px;
+    background-image: url(/images/gt1.jpg);
+    background-size: cover;
+    margin-top: 25px;
+    text-align: justify;
+}
+
+.gt1>p {
+    position: relative;
+    width: 100%;
+    top: 100%;
+    background-color: aliceblue;
+    font-size: 20px;
+    font-family: var(--font-family);
+    text-transform: capitalize;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+.gt2 {
+    width: 100%;
+    height: 400px;
+    background-image: url(/images/gt2.png);
+    background-size: cover;
+    margin-top: 130px;
+    text-align: justify;
+}
+
+.gt2>p {
+    position: relative;
+    width: 100%;
+    top: 100%;
+    background-color: aliceblue;
+    font-size: 20px;
+    font-family: var(--font-family);
+    text-transform: capitalize;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+.seprate7 {
+    width: 100%;
+    height: 30px;
+    background-color: var(--secondary-color);
+    margin-top: 100px;
+    position: relative;
+}
+
+.seprate7::after {
+    content: "Dragon ball super";
+    color: white;
+    text-transform: capitalize;
+    font-family: var(--font-family);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.super1 {
+    width: 100%;
+    height: 400px;
+    background-image: url(/images/goku.jpg);
+    background-size: cover;
+    margin-top: 25px;
+    text-align: justify;
+}
+
+.super1>p {
+    position: relative;
+    width: 100%;
+    top: 100%;
+    background-color: aliceblue;
+    font-size: 20px;
+    font-family: var(--font-family);
+    text-transform: capitalize;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+.super2 {
+    width: 100%;
+    height: 400px;
+    background-image: url(/images/super1.jpg);
+    background-size: cover;
+    margin-top: 130px;
+    text-align: justify;
+}
+
+.super2>p {
+    position: relative;
+    width: 100%;
+    top: 100%;
+    background-color: aliceblue;
+    font-size: 20px;
+    font-family: var(--font-family);
+    text-transform: capitalize;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+.other {
+    width: 100%;
+    height: 200px;
+    margin-top: 150px;
+    position: relative;
+}
+
+.footer1 {
+    width: 15%;
+    height: 50%;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-5%, -50%);
+    border-radius: 10%;
+    transition: 2s;
+}
+
+.footer1:hover {
+    background-color: transparent;
+    transition: 2s;
+}
+
+.footer1:hover::after {
+    text-decoration: underline yellow 2px;
+    transition: 1s;
+    font-size: 25px;
+}
+
+.footer1::after {
+    text-align: center;
+    content: "Isekai";
+    color: aliceblue;
+    font-family: var(--font-family);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer2 {
+    width: 15%;
+    height: 50%;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-35%, -50%);
+    border-radius: 10%;
+    transition: 2s;
+}
+
+.footer2:hover {
+    background-color: transparent;
+    transition: 2s;
+}
+
+.footer2:hover::after {
+    text-decoration: underline yellow 2px;
+    transition: 1s;
+    font-size: 25px;
+}
+
+.footer2::after {
+    text-align: center;
+    content: "Seinen";
+    color: aliceblue;
+    font-family: var(--font-family);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer3 {
+    width: 15%;
+    height: 50%;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-65%, -50%);
+    border-radius: 10%;
+    transition: 2s;
+}
+
+.footer3:hover {
+    background-color: transparent;
+    transition: 2s;
+}
+
+.footer3:hover::after {
+    text-decoration: underline yellow 2px;
+    transition: 1s;
+    font-size: 25px;
+}
+
+.footer3::after {
+    text-align: center;
+    content: "SOL";
+    color: aliceblue;
+    font-family: var(--font-family);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer4 {
+    width: 15%;
+    height: 50%;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    transform: translate(-95%, -50%);
+    border-radius: 50%;
+    transition: 2s;
+}
+
+.footer4>i {
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    transition: 2s;
+}
+
+.footer4:hover {
+    background-color: transparent;
+    transition: 2s;
+}
+
+.footer4:hover i {
+    transition: 2s;
+    font-size: 35px;
+}
